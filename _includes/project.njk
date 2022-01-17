@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title or metadata.title }}</title>
+    <meta name="description" content="{{ description or metadata.description }}">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/works.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla&family=Public+Sans:wght@300;400;600;700;900&family=Poppins:wght@400;600&display=swap">
+  </head>
+  <body>
+    <!-- <header>
+      <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+    </header> -->
+
+    {% include "about.html" %}
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    <section id="prevnext" class="prevnext" data-current-page="{{ order }}" >
+        <div id="prev">
+            <img id="previmg" />
+            <a id="prevlink" href="#" onmouseover="onPrev()" onmouseleave="offPrev()">PREV</a>
+        </div>
+        <div id="next">
+            <img id="nextimg" />
+            <a id="nextlink" href="#" onmouseover="onNext()" onmouseleave="offNext()">NEXT</a>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="foot foot1" >
+            <a id="openbtn" onclick="openNav()">ABOUT ME</a><br>
+            <a href="/index.html#works">WORK</a><br>
+            <a>&#38;</a>
+        </div>
+        <div class="foot foot2"></div>
+    </footer>
+
+    <!-- Current page: {{ page.url | url }} -->
+  </body>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides((slideIndex += n));
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName('mySlides');
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            slides[slideIndex - 1].style.display = 'block';
+        }
+    </script>
+
+    <script src="/index.js"></script>
+</html>

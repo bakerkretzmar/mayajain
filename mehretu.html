@@ -1,111 +1,67 @@
-<html>
-<head>
-	<meta charset="UTF-8">
-    <title> Maya Jain </title>
-    <link href="works.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Public+Sans:wght@300;400;600;700;900&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-     <section id="about"> 
-        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
-        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
-        <div id="left">
-                <div> 
-                    <a onmouseover="onAbout(7)" onmouseleave="offlink(7)" href="images/MayaJain_CV.pdf" target="_blank"> 
-                    <span id="arrow7" class="arrow"> &#8594;</span> CV </a>
-                </div>
-                <div>
-                    <a href=mailto:mayarose@rogers.com? target="_top" onmouseover="onAbout(8)" onmouseleave="offlink(8)"> 
-                    <span id="arrow8" class="arrow"> &#8594;</span> E-MAIL </a>
-                </div>
-                <div>
-                    <a href="https://www.instagram.com/maya_j_n/" target="_blank" onmouseover="onAbout(9)" onmouseleave="offlink(9)"> 
-                    <span id="arrow9" class="arrow"> &#8594;</span> INSTAGRAM </a>
-                </div>
-                <div id="image"><img onmouseover="cursorChange()" src="images/menu/me.jpg"></div>
-        </div>
-        <div onmouseover="Bold()" onmouseleave="unBold()" id="right"> 
-            <p> My name is Maya Jain. I am a multi-disciplinary designer. I strive to <span class="bold">prioritize care</span> in a world governed by profit. Through design, I hope to <span class="bold">empower</span> in ways that grant individuals, and communities <span class="bold">the freedom to thrive and cultivate joy</span>. I’d like to think that my work exists at the intersection of an active, politically engaged practice and an artistic, philosophical, creative one. My background is in a variety of media that range from <span class="bold">agriculture and food </span> to <span class="bold">fashion design.</span></p>
-        </div>
-    </section>
-    
-    <section id="description">
-        <div id="title"> 
-            <h1> ICAO INSTALLATION </h1>
-            <p> Spring 2018. <br> Plywood, Plexiglass, Acetate, White paint.</p>
-        </div>
-        <div onmouseover="Bold()" onmouseleave="unBold()" id="info1"> 
-            <p>A proposal and maquette for a public spacial intervention that pays hommage to the work of painter, Julie Mheretu. We draw from Mheretu’s recurrent conceptual themes of nationalism, immigration and social inequality, by intervening in a traffic-heavy corridor, forcing navigation and contemplation of ideas and questions surrounding complex issues of globalization that are relevant to the space itself.</p>
-            <br>
-            <p>We explicitly draw upon Mheretu’s aesthetic themes of layering, perspective and scale by incorporating a series transparent panels down a long corridor that cause overlapping between abstracted images as commuters move through the space. By presenting contrasting images of international travel and immigration in a corridor on the semi-public property of the International Civil Aviation Organization, a branch of the UN, we raise questions about inequality and the complexity of a ‘global village.’ </p>
-            <br> <br>
-        </div>
-        <div id="info3">
-            <p>A peer, Asa Perlman and myself collaborated on all conceptual aspects, while I contributed the image work, documentation and communication of the project. This was great practice in 3 dimensional design that involved the consideration of public space, the challenges and limitations involved with this type of installation work.<br> <br></p> 
-        </div>
-        <div class="slideshow-container">
-                <div class="mySlides">
-                <img src="images/5mehretu/slide1.jpg">
-                </div>
-                <div class="mySlides">
-                <img src="images/5mehretu/slide2.jpg">
-                </div>
-                <div class="mySlides">
-                <img src="images/5mehretu/slide3.jpg">
-                </div>
-                <div class="mySlides">
-                <img src="images/5mehretu/slide4.jpg">
-                </div>
-                <div class="mySlides">
-                <img src="images/5mehretu/slide5.jpg">
-                </div>
-                <div class="mySlides">
-                <img src="images/5mehretu/slide6.jpg">
-                </div>
-                <div class="mySlides">
-                <img src="images/5mehretu/slide7.jpg">
-                </div>
-              <a class="prev" onclick="plusSlides(-1)"></a>
-              <a class="next" onclick="plusSlides(1)"></a>
-            </div>         
-    </section>
-    <section class="prevnext">  
-        <div id="prev"> 
-            <img id="previmg" src="images/menu/4cuccr.jpg">
-            <a href="cuccr.html" onmouseover="onPrev()" onmouseleave="offPrev()">PREV</a>
-        </div>
-        <div id="next"> 
-            <img id="nextimg" src="images/menu/6campusmil.jpg">
-            <a href="campusmil.html" onmouseover="onNext()" onmouseleave="offNext()">NEXT</a>
-        </div>
-    </section>   
-    <footer id="footer">
-        <div class="foot foot1" > 
-            <a id="openbtn" onclick="openNav()">ABOUT ME</a><br>
-            <a href="index.html#works">WORK</a><br>
-            <a>&#38;</a>
-        </div>
-        <div class="foot foot2">
-        </div>
-    </footer>
-</body>
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-        
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
+---
+layout: project
+title: ICAO INSTALLATION
+order: 5
+---
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  slides[slideIndex-1].style.display = "block";  
-}
-</script>
-<script src="index.js"> </script></html>
+<section id="description">
+    <div id="title">
+        <h1>ICAO INSTALLATION</h1>
+        <p>
+            Spring 2018. <br />
+            Plywood, Plexiglass, Acetate, White paint.
+        </p>
+    </div>
+    <div onmouseover="Bold()" onmouseleave="unBold()" id="info1">
+        <p>
+            A proposal and maquette for a public spacial intervention that pays hommage to the work of painter, Julie
+            Mheretu. We draw from Mheretu’s recurrent conceptual themes of nationalism, immigration and social
+            inequality, by intervening in a traffic-heavy corridor, forcing navigation and contemplation of ideas and
+            questions surrounding complex issues of globalization that are relevant to the space itself.
+        </p>
+        <br />
+        <p>
+            We explicitly draw upon Mheretu’s aesthetic themes of layering, perspective and scale by incorporating a
+            series transparent panels down a long corridor that cause overlapping between abstracted images as commuters
+            move through the space. By presenting contrasting images of international travel and immigration in a
+            corridor on the semi-public property of the International Civil Aviation Organization, a branch of the UN,
+            we raise questions about inequality and the complexity of a ‘global village.’
+        </p>
+        <br />
+        <br />
+    </div>
+    <div id="info3">
+        <p>
+            A peer, Asa Perlman and myself collaborated on all conceptual aspects, while I contributed the image work,
+            documentation and communication of the project. This was great practice in 3 dimensional design that
+            involved the consideration of public space, the challenges and limitations involved with this type of
+            installation work.<br />
+            <br />
+        </p>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="/images/5mehretu/slide1.jpg" />
+        </div>
+        <div class="mySlides">
+            <img src="/images/5mehretu/slide2.jpg" />
+        </div>
+        <div class="mySlides">
+            <img src="/images/5mehretu/slide3.jpg" />
+        </div>
+        <div class="mySlides">
+            <img src="/images/5mehretu/slide4.jpg" />
+        </div>
+        <div class="mySlides">
+            <img src="/images/5mehretu/slide5.jpg" />
+        </div>
+        <div class="mySlides">
+            <img src="/images/5mehretu/slide6.jpg" />
+        </div>
+        <div class="mySlides">
+            <img src="/images/5mehretu/slide7.jpg" />
+        </div>
+        <a class="prev" onclick="plusSlides(-1)"></a>
+        <a class="next" onclick="plusSlides(1)"></a>
+    </div>
+</section>

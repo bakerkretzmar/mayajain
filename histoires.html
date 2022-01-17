@@ -1,121 +1,83 @@
-<html>
-<head>
-	<meta charset="UTF-8">
-    <title> Maya Jain </title>
-    <link href="works.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Public+Sans:wght@300;400;600;700;900&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-     <section id="about"> 
-        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
-        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
-        <div id="left">
-                <div> 
-                    <a onmouseover="onAbout(7)" onmouseleave="offlink(7)" href="images/MayaJain_CV.pdf" target="_blank"> 
-                    <span id="arrow7" class="arrow"> &#8594;</span> CV </a>
-                </div>
-                <div>
-                    <a href=mailto:mayarose@rogers.com? target="_top" onmouseover="onAbout(8)" onmouseleave="offlink(8)"> 
-                    <span id="arrow8" class="arrow"> &#8594;</span> E-MAIL </a>
-                </div>
-                <div>
-                    <a href="https://www.instagram.com/maya_j_n/" target="_blank" onmouseover="onAbout(9)" onmouseleave="offlink(9)"> 
-                    <span id="arrow9" class="arrow"> &#8594;</span> INSTAGRAM </a>
-                </div>
-                <div id="image"><img onmouseover="cursorChange()" src="images/menu/me.jpg"></div>
-        </div>
-        <div onmouseover="Bold()" onmouseleave="unBold()" id="right"> 
-            <p> My name is Maya Jain. I am a multi-disciplinary designer. I strive to <span class="bold">prioritize care</span> in a world governed by profit. Through design, I hope to <span class="bold">empower</span> in ways that grant individuals, and communities <span class="bold">the freedom to thrive and cultivate joy</span>. I’d like to think that my work exists at the intersection of an active, politically engaged practice and an artistic, philosophical, creative one. My background is in a variety of media that range from <span class="bold">agriculture and food </span> to <span class="bold">fashion design.</span></p> 
-        </div>
-    </section>
-    
-    <section id="description">
-        <div id="title"> 
-            <h1> HISTOIRES À DORMIR DEBOUT </h1>
-            <p> Spring 2018. <br> Pyjamas: Rayon, Elastic, Reused buttons, reused thread.</p>
-        </div>
-        <div onmouseover="Bold()" onmouseleave="unBold()" id="info1"> 
-            <p>This series of pyjamas was a fundraising design project in support of Chez Doris, a daytime shelter in Montreal supporting women at risk. Over the course of one month, our team of 4, researched and sourced materials, designed patterns, worked with screen printing and sublimation techniques, and sewed from scratch, 20 pyjama sets that were sold at a design pop-up. The resulting design was a loose, button up shirt and shorts as well as a night gown. Half the pyjamas were made in an ochre and the others in pale pink. Each had a subtle screen printed design that matched the material colour as well as recycled tortoise-shell buttons. 
-            <br>
-            <span class="bold">Ultimately, we raised over 700 dollars for chez doris and we were exposed to the potential of design in supporting crucial socially engaged initiatives like chez doris. </span><br><br>
-            </p> 
-        </div>
-        <div onmouseover="Bold()" onmouseleave="unBold()" id="info3">
-            <p>My role was pattern making, sewing, documentation as well as conceptual development. Some of the major challenges we faced included the sourcing of affordable sustainable materials, labour and time constraints as well as, versatile pattern design that could be produced in a large scale and sold to a variety of buyers. The process gave us insight into the impacts and difficulties of the fashion industry including resource exploitation, waste, arduous labour and a balance with affordability.</p> 
-            <br>
-            <p>During our time visiting at the centre, we observed and were recounted <span class="bold">the significance of basic respite, rest and security that lacks in many of these women’s lives.</span> In an attempt to place conceptual emphasis on the significance of rest that was communicated to us, we decided to design, create and sell pyjamas that we hoped would reflect and uphold the work of Chez Doris while bringing attention to the luxuries that many simply take for granted. </p>
-            <br>
-            <p> See PDF <a href="images/3histoires/Histoires.pdf">here.</a></p>
-        </div>
-        <div id="photos">
-            <img src="images/3histoires/Histoires_pop.jpg">
-            <img src="images/3histoires/histoires_process1.jpg">
-            <img src="images/3histoires/histoires_process2.jpg">
-        </div>
-        <div class="slideshow-container">
-                <div class="mySlides">
-                <img src="images/3histoires/histoires1.jpg">
-                </div>
-                <div class="mySlides">
-                <img src="images/3histoires/histoires2.jpg">
-                </div>
-                <div class="mySlides">
-                <img src="images/3histoires/histoires3.jpg">
-                </div>
-                <div class="mySlides">
-                <img src="images/3histoires/histoires4.jpg">
-                </div>
-                <div class="mySlides">
-                <img src="images/3histoires/histoires5.jpg">
-                </div>
-                <div class="mySlides">
-                <img src="images/3histoires/histoires6.jpg">
-                </div>
-                <div class="mySlides">
-                <img src="images/3histoires/histoires7.jpg">
-                </div>
-                
-              <a class="prev whtprev" onclick="plusSlides(-1)"></a>
-              <a class="next whtnext" onclick="plusSlides(1)"></a>
-            </div>         
-    </section>
-      <section class="prevnext" id="prevnext" data-current-page="2" >  
-        <div id="prev"> 
-            <img id="previmg">
-            <a id="prevlink" href="#" onmouseover="onPrev()" onmouseleave="offPrev()">PREV</a>
-        </div>
-        <div id="next"> 
-            <img id="nextimg">
-            <a id="nextlink" href="#" onmouseover="onNext()" onmouseleave="offNext()">NEXT</a>
-        </div>
-    </section>   
-    <footer id="footer">
-        <div class="foot foot1" > 
-            <a id="openbtn" onclick="openNav()">ABOUT ME</a><br>
-            <a href="index.html#works">WORK</a><br>
-            <a>&#38;</a>
-        </div>
-        <div class="foot foot2">
-        </div>
-    </footer>
-</body>
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-        
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
+---
+layout: project
+title: HISTOIRES À DORMIR DEBOUT
+order: 3
+---
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  slides[slideIndex-1].style.display = "block";  
-}
-</script>
-<script src="index.js"> </script></html>
+<section id="description">
+    <div id="title">
+        <h1>HISTOIRES À DORMIR DEBOUT</h1>
+        <p>
+            Spring 2018. <br />
+            Pyjamas: Rayon, Elastic, Reused buttons, reused thread.
+        </p>
+    </div>
+    <div onmouseover="Bold()" onmouseleave="unBold()" id="info1">
+        <p>
+            This series of pyjamas was a fundraising design project in support of Chez Doris, a daytime shelter in
+            Montreal supporting women at risk. Over the course of one month, our team of 4, researched and sourced
+            materials, designed patterns, worked with screen printing and sublimation techniques, and sewed from
+            scratch, 20 pyjama sets that were sold at a design pop-up. The resulting design was a loose, button up shirt
+            and shorts as well as a night gown. Half the pyjamas were made in an ochre and the others in pale pink. Each
+            had a subtle screen printed design that matched the material colour as well as recycled tortoise-shell
+            buttons.
+            <br />
+            <span class="bold"
+                >Ultimately, we raised over 700 dollars for chez doris and we were exposed to the potential of design in
+                supporting crucial socially engaged initiatives like chez doris. </span
+            ><br /><br />
+        </p>
+    </div>
+    <div onmouseover="Bold()" onmouseleave="unBold()" id="info3">
+        <p>
+            My role was pattern making, sewing, documentation as well as conceptual development. Some of the major
+            challenges we faced included the sourcing of affordable sustainable materials, labour and time constraints
+            as well as, versatile pattern design that could be produced in a large scale and sold to a variety of
+            buyers. The process gave us insight into the impacts and difficulties of the fashion industry including
+            resource exploitation, waste, arduous labour and a balance with affordability.
+        </p>
+        <br />
+        <p>
+            During our time visiting at the centre, we observed and were recounted
+            <span class="bold"
+                >the significance of basic respite, rest and security that lacks in many of these women’s lives.</span
+            >
+            In an attempt to place conceptual emphasis on the significance of rest that was communicated to us, we
+            decided to design, create and sell pyjamas that we hoped would reflect and uphold the work of Chez Doris
+            while bringing attention to the luxuries that many simply take for granted.
+        </p>
+        <br />
+        <p>See PDF <a href="/images/3histoires/Histoires.pdf">here.</a></p>
+    </div>
+    <div id="photos">
+        <img src="/images/3histoires/Histoires_pop.jpg" />
+        <img src="/images/3histoires/histoires_process1.jpg" />
+        <img src="/images/3histoires/histoires_process2.jpg" />
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="/images/3histoires/histoires1.jpg" />
+        </div>
+        <div class="mySlides">
+            <img src="/images/3histoires/histoires2.jpg" />
+        </div>
+        <div class="mySlides">
+            <img src="/images/3histoires/histoires3.jpg" />
+        </div>
+        <div class="mySlides">
+            <img src="/images/3histoires/histoires4.jpg" />
+        </div>
+        <div class="mySlides">
+            <img src="/images/3histoires/histoires5.jpg" />
+        </div>
+        <div class="mySlides">
+            <img src="/images/3histoires/histoires6.jpg" />
+        </div>
+        <div class="mySlides">
+            <img src="/images/3histoires/histoires7.jpg" />
+        </div>
+
+        <a class="prev whtprev" onclick="plusSlides(-1)"></a>
+        <a class="next whtnext" onclick="plusSlides(1)"></a>
+    </div>
+</section>

@@ -8,5 +8,12 @@
     "devDependencies": {
         "@11ty/eleventy": "^1.0.0",
         "prettier": "^2.5.1"
+    },
+    "prettier": {
+        "htmlWhitespaceSensitivity": "ignore",
+        "printWidth": 160,
+        "singleQuote": true,
+        "tabWidth": 4,
+        "trailingComma": "es5"
     }
 }

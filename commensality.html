@@ -1,114 +1,59 @@
-<html>
-<head>
-	<meta charset="UTF-8">
-    <title> Maya Jain </title>
-    <link href="works.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Public+Sans:wght@300;400;600;700;900&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-     <section id="about"> 
-        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
-        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
-        <div id="left">
-                <div> 
-                    <a onmouseover="onAbout(7)" onmouseleave="offlink(7)" href="images/MayaJain_CV.pdf" target="_blank"> 
-                    <span id="arrow7" class="arrow"> &#8594;</span> CV </a>
-                </div>
-                <div>
-                    <a href=mailto:mayarose@rogers.com? target="_top" onmouseover="onAbout(8)" onmouseleave="offlink(8)"> 
-                    <span id="arrow8" class="arrow"> &#8594;</span> E-MAIL </a>
-                </div>
-                <div>
-                    <a href="https://www.instagram.com/maya_j_n/" target="_blank" onmouseover="onAbout(9)" onmouseleave="offlink(9)"> 
-                    <span id="arrow9" class="arrow"> &#8594;</span> INSTAGRAM </a>
-                </div>
-                <div id="image"><img onmouseover="cursorChange()" src="images/menu/me.jpg"></div>
-        </div>
-        <div onmouseover="Bold()" onmouseleave="unBold()" id="right"> 
-            <p> My name is Maya Jain. I am a multi-disciplinary designer. I strive to <span class="bold">prioritize care</span> in a world governed by profit. Through design, I hope to <span class="bold">empower</span> in ways that grant individuals, and communities <span class="bold">the freedom to thrive and cultivate joy</span>. I’d like to think that my work exists at the intersection of an active, politically engaged practice and an artistic, philosophical, creative one. My background is in a variety of media that range from <span class="bold">agriculture and food </span> to <span class="bold">fashion design.</span></p> 
-        </div>
-    </section>
-    
-    <section id="description">
-        <div id="title"> 
-            <h1> COMMENSALITY &amp; EMANCIPATION </h1>
-            <p> Fall 2019.</p>
-        </div>
-        <div onmouseover="Bold()" onmouseleave="unBold()" id="info1"> 
-            <p>Written in the context of a senior level class in the Design Arts Bachelors at Concordia University, this research essay aimed to contribute to the broader culture of design knowledge and to recapitulate as well as elaborate upon the ideas I found most poignant in my degree. Commensality &amp; Emancipation is a personal investigation into the systemic issues of neoliberal capitalism and the potential of critical, socially-engaged design in food systems. I bring together ideas of <span class="bold">‘social infrastructure’</span>, <span class="bold">‘commensality’</span> and <span class="bold">‘food sovereignty’</span> with <span class="bold">social justice, alternative economies and anti-capitalism in mind.</span></p>
-            <br> 
-            <p>The design of the essay alludes to the aesthetic of corporate food marketing schemes through colour and symbolism. </p>
-        </div>
-        <div id="info2">
-        <p> See PDF <a href="images/2commensal/Commensality.pdf">here.</a></p>
-        </div>
-        
-        <div class="slideshow-container">
-                <div class="mySlides">
-                <img src="images/2commensal/Commensality2.jpg">
-                </div>
-                <div class="mySlides">
-                <img src="images/2commensal/Commensality3.jpg">
-                </div>
-                <div class="mySlides">
-                <img src="images/2commensal/Commensality4.jpg">
-                </div>
-                <div class="mySlides">
-                <img src="images/2commensal/Commensality5.jpg">
-                </div>
-                <div class="mySlides">
-                <img src="images/2commensal/Commensality6.jpg">
-                </div>
-                <div class="mySlides">
-                <img src="images/2commensal/Commensality7.jpg">
-                </div>
-                <div class="mySlides">
-                <img src="images/2commensal/Commensality8.jpg">
-                </div>
-                <div class="mySlides">
-                <img src="images/2commensal/Commensality9.jpg">
-                </div>
-              <a class="prev" onclick="plusSlides(-1)"></a>
-              <a class="next" onclick="plusSlides(1)"></a>
-            </div>         
-    </section>
-    <section class="prevnext" id="prevnext" data-current-page="1" >  
-        <div id="prev"> 
-            <img id="previmg">
-            <a id="prevlink" href="#" onmouseover="onPrev()" onmouseleave="offPrev()">PREV</a>
-        </div>
-        <div id="next"> 
-            <img id="nextimg">
-            <a id="nextlink" href="#" onmouseover="onNext()" onmouseleave="offNext()">NEXT</a>
-        </div>
-    </section>   
-    <footer id="footer">
-        <div class="foot foot1" > 
-            <a id="openbtn" onclick="openNav()">ABOUT ME</a><br>
-            <a href="index.html#works">WORK</a><br>
-            <a>&#38;</a>
-        </div>
-        <div  class="foot foot2">
-        </div>
-    </footer>
-</body>
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-        
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
+---
+layout: project
+title: COMMENSALITY & EMANCIPATION
+order: 1
+---
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  slides[slideIndex-1].style.display = "block";  
-}
-</script>
-<script src="index.js"> </script></html>
+<section id="description">
+    <div id="title">
+        <h1>COMMENSALITY & EMANCIPATION</h1>
+        <p>Fall 2019.</p>
+    </div>
+    <div id="info1" onmouseover="Bold()" onmouseleave="unBold()">
+        <p>
+            Written in the context of a senior level class in the Design Arts Bachelors at Concordia University, this
+            research essay aimed to contribute to the broader culture of design knowledge and to recapitulate as well as
+            elaborate upon the ideas I found most poignant in my degree. Commensality & Emancipation is a personal
+            investigation into the systemic issues of neoliberal capitalism and the potential of critical,
+            socially-engaged design in food systems. I bring together ideas of <strong>‘social infrastructure’</strong>,
+            <strong>‘commensality’</strong> and <strong>‘food sovereignty’</strong> with
+            <strong>social justice, alternative economies and anti-capitalism in mind.</strong>
+        </p>
+        <br />
+        <p>
+            The design of the essay alludes to the aesthetic of corporate food marketing schemes through colour and
+            symbolism.
+        </p>
+    </div>
+    <div id="info2">
+        <p>See PDF <a href="/images/2commensal/Commensality.pdf">here.</a></p>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="/images/2commensal/Commensality2.jpg" />
+        </div>
+        <div class="mySlides">
+            <img src="/images/2commensal/Commensality3.jpg" />
+        </div>
+        <div class="mySlides">
+            <img src="/images/2commensal/Commensality4.jpg" />
+        </div>
+        <div class="mySlides">
+            <img src="/images/2commensal/Commensality5.jpg" />
+        </div>
+        <div class="mySlides">
+            <img src="/images/2commensal/Commensality6.jpg" />
+        </div>
+        <div class="mySlides">
+            <img src="/images/2commensal/Commensality7.jpg" />
+        </div>
+        <div class="mySlides">
+            <img src="/images/2commensal/Commensality8.jpg" />
+        </div>
+        <div class="mySlides">
+            <img src="/images/2commensal/Commensality9.jpg" />
+        </div>
+        <a class="prev" onclick="plusSlides(-1)"></a>
+        <a class="next" onclick="plusSlides(1)"></a>
+    </div>
+</section>
