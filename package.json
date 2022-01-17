@@ -1,0 +1,12 @@
+{
+    "name": "@mayajain/mayajain",
+    "version": "1.0.0",
+    "author": "Maya Jain",
+    "scripts": {
+        "build": "@11ty/eleventy"
+    },
+    "devDependencies": {
+        "@11ty/eleventy": "^1.0.0",
+        "prettier": "^2.5.1"
+    }
+}
