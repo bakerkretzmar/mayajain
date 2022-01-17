@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title> Maya Jain </title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Public+Sans:wght@300;400;600;700;900&family=Poppins:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="intro"> 
+        <div  id="dot"> 
+            <img onmouseover="mayaChange()" onclick="start()" id="introseq" src="images/animation.jpg"> 
+        </div>
+    </section>
+    <section id="about"> 
+        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+        <div id="left">
+                <div> 
+                    <a onmouseover="onAbout(7)" onmouseleave="offlink(7)" href="images/MayaJain_CV.pdf" target="_blank"> 
+                    <span id="arrow7" class="arrow"> &#8594;</span> CV </a>
+                </div>
+                <div>
+                    <a href=mailto:mayarose@rogers.com? target="_top" onmouseover="onAbout(8)" onmouseleave="offlink(8)"> 
+                    <span id="arrow8" class="arrow"> &#8594;</span> E-MAIL </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/maya_j_n/" target="_blank" onmouseover="onAbout(9)" onmouseleave="offlink(9)"> 
+                    <span id="arrow9" class="arrow"> &#8594;</span> INSTAGRAM </a>
+                </div>
+                <div id="image"><img onmouseover="cursorChange()" src="images/menu/me.jpg"></div>
+        </div>
+        <div onmouseover="Bold()" onmouseleave="unBold()" id="right"> 
+            <p> My name is Maya Jain. I am a multi-disciplinary designer. I strive to <span class="bold">prioritize care</span> in a world governed by profit. Through design, I hope to <span class="bold">empower</span> in ways that grant individuals, and communities <span class="bold">the freedom to thrive and cultivate joy</span>. I’d like to think that my work exists at the intersection of an active, politically engaged practice and an artistic, philosophical, creative one. My background is in a variety of media that range from <span class="bold">agriculture and food </span> to <span class="bold">fashion design.</span></p>
+        </div>
+    </section>
+    
+    <nav id="nav">
+        <a onmouseover="onlink(8, 'vc')" onmouseleave="offlink(8)" id="link8" href="vc.html"> 
+            <span id="arrow8" class="arrow"> &#8594;</span> 
+            VALUE COLLECTIVE </a><br>
+        <a onmouseover="onlink(7, 'c40')" onmouseleave="offlink(7)" id="link7" href="c40.html"> 
+            <span id="arrow7" class="arrow"> &#8594;</span> 
+            FUTURS POSSIBLES </a><br>
+        <a onmouseover="onlink(6, 'campusmil')" onmouseleave="offlink(6)" id="link6" href="campusmil.html"> 
+            <span id="arrow6" class="arrow"> &#8594;</span> 
+            CAMPUS MIL </a><br>
+        <a onmouseover="onlink(1,'hold')" onmouseleave="offlink(1)" id="link1" href="hold.html"> 
+            <span id="arrow1" class="arrow"> &#8594;</span> 
+            LET ME HOLD ON TO YOU </a> <br>
+        <a onmouseover="onlink(2, 'commensality')" onmouseleave="offlink(2)" id="link2" href="commensality.html"> 
+            <span id="arrow2" class="arrow"> &#8594;</span> 
+            COMMENSALITY &#38; EMANCIPATION </a> <br>
+        <a onmouseover="onlink(3, 'histoires')" onmouseleave="offlink(3)" id="link3" href="histoires.html"> 
+            <span id="arrow3" class="arrow"> &#8594;</span> 
+            HISTOIRES À DORMIR DEBOUT </a> <br>
+        <a onmouseover="onlink(4, 'cuccr')" onmouseleave="offlink(4)" id="link4" href=cuccr.html> 
+            <span id="arrow4" class="arrow"> &#8594;</span> 
+            CENTRE FOR CREATIVE REUSE </a> <br>
+        <a onmouseover="onlink(5, 'mehretu')" onmouseleave="offlink(5)" id="link5" href="mehretu.html"> 
+            <span id="arrow5" class="arrow"> &#8594;</span> 
+            ICAO INSTALLATION </a><br>
+        
+        
+    </nav>
+    
+    <section id="works">
+        <div class="box box1"> </div>
+         <a href="vc.html" onmouseover="onphoto(6,'vc')" onmouseleave="offphoto(5,'vc')"  class="box pic"> 
+                <img id="vc" src="images/menu/8vc.jpg">
+                <p> EXPERIMENTS IN NON-FINANCIAL VALUE CREATION</p>
+        </a>
+        <a href="c40.html" onmouseover="onphoto(7,'c40')" onmouseleave="offphoto(5,'c40')"  class="box pic"> 
+                <img id="c40" src="images/menu/7c40.jpg">
+                <p> BRINGING COMPLEXITY TO THE FOREGROUND IN URBAN PLANNING.</p>
+        </a>
+         <a href="campusmil.html" onmouseover="onphoto(6,'campusmil')" onmouseleave="offphoto(5,'campusmil')"  class="box pic"> 
+                <img id="campusmil" src="images/menu/6campusmil.jpg">
+                <p> RESEARCHING THE BENEFITS OF INFORMALITY AND THE COMMONS.</p>
+        </a>
+        <a href="hold.html" onmouseover="onphoto(1,'hold')" onmouseleave="offphoto(1, 'hold')" class="box pic"> 
+                <img id="hold"  src="images/menu/1hold.jpg"> 
+                <p> HYBRID GARMENTS THAT DISRUPT WASTE CYCLES &amp; CELEBRATE MATERIAL AGENCY.</p>
+        </a>
+        <a href="commensality.html" onmouseover="onphoto(2,'commensality')" onmouseleave="offphoto(2,'commensality')" class="box pic ">
+                <img id="commensality" src="images/menu/2commensality.jpg">
+                <p> RESEARCHING THE POTENTIAL OF SOCIALLY-ENGAGED DESIGN IN FOOD SYSTEMS. </p>
+        </a>
+        <a href="histoires.html" onmouseover="onphoto(3, 'histoires')" onmouseleave="offphoto(3,'histoires')"  class="box pic">
+                <img id="histoires" src="images/menu/3histoires.jpg">
+                <p> PYJAMAS DESIGNED IN SUPPORT OF CHEZ DORIS. </p>
+        </a>
+        <a href="cuccr.html" onmouseover="onphoto(4,'cuccr')" onmouseleave="offphoto(4,'cuccr')"  class="box pic">
+                <img id="cuccr" src="images/menu/4cuccr.jpg">
+                <p> COMMUNICATING SUSTAINABLE INSTITUTIONAL CHANGE.</p>
+        </a>
+        <a href="mehretu.html" onmouseover="onphoto(5,'mehretu')" onmouseleave="offphoto(5,'mehretu')"  class="box pic"> 
+                <img id="mehretu" src="images/menu/5mehretu.jpg">
+                <p> INTERVENING IN THE COMMUTERS' CORRIDOR OF THE ICAO.</p>
+        </a>
+        <div class="box box8"> </div>
+    </section>
+    <footer id="footer">
+        <div class=" foot foot1" > 
+            <a id="openbtn" onclick="openNav()"> ABOUT ME</a>
+            <a href="index.html#works"> WORK </a>
+            <a href="#"> &#38; </a>
+        </div>
+        <div class="foot foot2">
+        </div>
+    </footer>
+</body>
+<script src="index.js"> </script>
+</html>
